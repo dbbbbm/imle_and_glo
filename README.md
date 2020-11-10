@@ -7,22 +7,22 @@ Simple implementation of papers "Implicit maximum likelihood estimation", "Optim
 ### Training
 #### IMLE
 
-!(1)[imgs/imle.png]
+![](imgs/imle.png)
 
 #### GLO
 
-!(2)[imgs/glo.png]
+![](imgs/glo.png)
 
 ### Random sample
 
 #### IMLE
 
-!(3)[imgs/imle_sample.png]
+![](imgs/imle_sample.png)
 
 #### GLO
 
-!(4)[imgs/glo_sample.png]
+![](imgs/glo_sample.png)
 
 #### IMLE+GLO(use IMLE to generate the latent code of GLO)
 
-!(5)[imgs/imle+glo.jpg]
+![](imgs/imle+glo.jpg)
