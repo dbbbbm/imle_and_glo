@@ -13,7 +13,7 @@ class GloMNIST(data.Dataset):
                '5 - five', '6 - six', '7 - seven', '8 - eight', '9 - nine']
 
     def __init__(self, root, train=True, transform=None, target_transform=None, latent_dim=64):
-        super(GloMNIST, self).__init__(root)
+        super(GloMNIST, self).__init__()
         self.transform = transform
         self.target_transform = target_transform
         self.train = train  # training set or test set
@@ -65,7 +65,7 @@ def get_glomnist_dataloader(bs):
         transforms.ToTensor(),
         transforms.Normalize((0.5,), (0.5,))
     ])
-    ds = GloMNIST('../cfopen/MNIST/MNIST/processed', transform=tf)
+    ds = GloMNIST('./MNIST/processed', transform=tf)
     dl = data.DataLoader(ds, bs, True)
 
     return dl, ds
